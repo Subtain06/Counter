@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="bg">
+    
+  </div>
+  <div class="box">
+    <h2>COUNTER</h2>
+    <h1 id="value">0</h1>
+    <div class="btn">
+      <button id="dec">decrease</button>
+      <button type="button" id="inc" >increase</button>
+    </div>
+  </div>
+  <div class="bg2">
+    
+  </div>
+  
+  <script>
+    var inc = document.getElementById("inc");
+    var dec = document.getElementById("dec");
+    var value = document.getElementById("value")
+    var counter = 0;
+    inc.addEventListener("click", function(){
+      counter++;
+      value.innerHTML = counter;
+    } 
+    )  
+    dec.addEventListener("click", function (){
+      counter--;
+      value.innerHTML = counter;
+    } 
+    )  
+    
+  </script>
+</body>
+</html>
